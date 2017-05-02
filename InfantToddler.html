@@ -2,29 +2,42 @@
 <html>
 <head>
 <style>
-body {background-color: powderblue;}
+html {
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom,#e5edf5, white);
+  background-repeat: no-repeat;
+  height:100%;
+}
+h3{
+  color: #09589f
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #f4954a;
+    border:#e1e1e1 outset 2px;
 }
 
 li {
     float: left;
+    border:outset #09589f 1.6px;
+    border-radius: 5px;
+    margin: 5px 0px 5px 5px;
+  
 }
 
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: #043764;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: none;
+    background-color:#e0711b;
 }
 
 li.dropdown {
@@ -48,7 +61,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: orange}
+.dropdown-content a:hover {background-color: #f4954a}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -58,7 +71,6 @@ li.dropdown {
 <body>
 
 <ul>
-  <li><a href="#home">Home</a></li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Infant Toddler</a>
     <div class="dropdown-content">
@@ -71,7 +83,7 @@ li.dropdown {
 
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Early Childhood</a>
-    <div class="dropdown-content">
+    <div class="dropdown-content ">
       <a href="https://www.google.com/url?hl=en&q=http://fm.cafesarkansas.com/EarlyChild/&source=gmail&ust=1493777651714000&usg=AFQjCNFpvWG9Fild4WGxklAoef6oBJKcTQ">English (Full)</a>
       <a href="http://fm.cafesarkansas.com/EarlyChildSib/">English (Sib)</a>
       <!-- <a href="http://www.cafesarkansas.com/infanttodSpan/">Spanish (Full)</a> -->
@@ -87,8 +99,8 @@ li.dropdown {
   </li>
 </ul>
 
-<h3>Welcome to Infant Toddler homepage</h3>
-<p>Choose which category from above to help fill out forms.</p>
+<h3>Welcome to The Family Map Eforms</h3>
+<p>Choose an eForm from the dropdowns above.</p>
 
 </body>
 </html>
