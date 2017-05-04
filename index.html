@@ -16,8 +16,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f4954a;
-    border:#e1e1e1 outset 2px;
 }
 
 li {
@@ -25,6 +23,8 @@ li {
     border:outset #09589f 1.6px;
     border-radius: 5px;
     margin: 5px 0px 5px 5px;
+    background-image: linear-gradient(to bottom,#e5edf5, white);
+  background-repeat: no-repeat;
 
 }
 
@@ -37,7 +37,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color:#e0711b;
+    background-color:#f4954a;
 }
 
 li.dropdown {
@@ -66,32 +66,64 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/*
  .centeredcontainer {
-    border: outset black 1px;
+    border: outset #2d5588 1px;
+    border-radius: 5px;
     width: 50%;
-    height: 250px;
+    height: 10em;
     padding: 5px;
     margin: auto;
-}*/
+    margin-top: 10px;
+    text-align: center;
+}
+#navbar{
+	align-items: center;
+	width: 100%;
+    background-color: #f4954a;
+    border: #e1e1e1 outset 2px;
+}
+span#lang {
+    color: #043764;
+}
+#lang-eng {
+    margin-left: 30px;
+}
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+img#logo {
+    width: 95px;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    border: outset lightgray 1px;
+    float: left;
+    background-image: linear-gradient(to bottom,#e5edf5, white);
+  background-repeat: no-repeat;
+}
 
 </style>
 </head>
 <body>
-<div class="centeredcontainer">
+<div id="navbar">
+<a target="_blank" href="http://thefamilymap.org">
+<img id="logo"src="logo.png"/>
+</a>
+<div class="table">
 <ul>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Prenatal</a>
     <div class="dropdown-content">
-      <a href="https://fm.cafesarkansas.com/Prenatal/">English</a>
+      <a id="pre" href="https://fm.cafesarkansas.com/Prenatal/" target="_blank">Prenatal</a>
     </div>
   </li>
 
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Infant Toddler <small>(Birth-3 Years)</small></a>
     <div class="dropdown-content">
-      <a href="https://fm.cafesarkansas.com/InfantTod/">English (Full)</a>
-      <a href="https://fm.cafesarkansas.com/InfantTodSib/">English (Sib)</a>
+      <a id="it" href="https://fm.cafesarkansas.com/InfantTod/" target="_blank">Infant Tod</a>
+      <a id="its" href="https://fm.cafesarkansas.com/InfantTodSib/" target="_blank">Infant Tod Sib</a>
       <!-- <a href="http://www.cafesarkansas.com/infanttodSpan/">Spanish (Full)</a> -->
       <!-- <a href="http://www.cafesarkansas.com/infanttodSibSpan/">Spanish (Sib)</a> -->
     </div>
@@ -100,17 +132,28 @@ li.dropdown {
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Early Childhood <small>(3-5 Years)</small></a>
     <div class="dropdown-content ">
-      <a href="https://fm.cafesarkansas.com/EarlyChild">English (Full)</a>
-      <a href="https://fm.cafesarkansas.com/EarlyChildSib/">English (Sib)</a>
+      <a id="ec" href="https://fm.cafesarkansas.com/EarlyChild" target="_blank">Early Child</a>
+      <a id="ecs" href="https://fm.cafesarkansas.com/EarlyChildSib/" target="_blank">Early Child Sib</a>
       <!-- <a href="http://www.cafesarkansas.com/infanttodSpan/">Spanish (Full)</a> -->
       <!-- <a href="http://www.cafesarkansas.com/infanttodSibSpan/">Spanish (Sib)</a> -->
     </div>
   </li>
+  <li class="dropdown">
+  	<a href="http://fmportal.cafesarkansas.com" class="dropbtn" target="_blank">Portal</a>
+  </li>
+  <input id="lang-eng" class="lang" type="radio" name="lang" value="1" checked="true"><span id="lang">English</span>
+  <input id="lang-span" class="lang" type="radio" name="lang" value="2"><span id="lang">Spanish <small>(coming soon)</small></span>
 
 </ul>
+</div>
+</div>
+<div class="centeredcontainer">
 
-<h3>Welcome to The Family Map Eforms</h3>
-<p>Choose an eForm from the dropdowns above.</p>
-
+	<h3>Welcome to The Family Map eForms page!</h3>
+	<p>Choose an option from the menu above.</p>
+</div>
 </body>
+
+<SCRIPT type='text/javascript' src='https://fm.cafesarkansas.com/EarlyChild/53293/jquery-1.8.3.min.js'></script>
+<script type="text/javascript" src="forms.js"></script>
 </html>
