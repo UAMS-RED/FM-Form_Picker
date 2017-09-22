@@ -2,7 +2,6 @@
     //array with anchor info. loop through these and change to language picked via radio button.
     forms = [{
       "engName":"Prenatal",
-      //change these to actual spanish text
       "spanName":"Prenatal Span",
       "id":"pre",
       "spanHref":"https://fm.cafesarkansas.com/PrenatalSpan/",
